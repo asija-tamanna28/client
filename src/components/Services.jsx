@@ -3,15 +3,29 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
-    <section className="py-16 px-8 bg-gradient-to-r from-teal-100 via-blue-100 to-white">
-      <div className="max-w-6xl mx-auto text-center">
+    <section
+      className="py-16 px-8 bg-cover bg-center relative"
+      style={{
+        backgroundImage: "url('https://ik.imagekit.io/7uve7qsipm/background_services.png?updatedAt=1726161203569')", // Replace with your image URL
+      }}
+    >
+      {/* Overlay for blur effect */}
+      <div className="absolute inset-0 bg-white bg-opacity-50 backdrop-blur-sm"></div>
+
+      {/* Content */}
+      <div className="relative max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-teal-800 mb-8" data-aos="fade-up">
           Our Services
         </h2>
-        <p className="text-lg text-gray-800 mb-12" data-aos="fade-up" data-aos-delay="200">
+        <p
+          className="text-lg text-gray-800 mb-12 max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Explore the wide range of services we offer to elevate your business and digital presence.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           <div
             className="relative bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-teal-50 border-2 border-transparent hover:border-teal-300 overflow-hidden"
             data-aos="fade-right"
@@ -31,6 +45,7 @@ const Services = () => {
               Learn More
             </Link>
           </div>
+
           <div
             className="relative bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-blue-50 border-2 border-transparent hover:border-blue-300 overflow-hidden"
             data-aos="fade-up"
@@ -50,6 +65,7 @@ const Services = () => {
               Learn More
             </Link>
           </div>
+
           <div
             className="relative bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-teal-50 border-2 border-transparent hover:border-teal-300 overflow-hidden"
             data-aos="fade-left"
@@ -69,6 +85,7 @@ const Services = () => {
               Learn More
             </Link>
           </div>
+
           <div
             className="relative bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:bg-blue-50 border-2 border-transparent hover:border-blue-300 overflow-hidden"
             data-aos="fade-up"

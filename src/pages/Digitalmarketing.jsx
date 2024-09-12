@@ -8,7 +8,13 @@ const DigitalMarketing = () => {
       <Navbar />
 
       {/* Main Digital Marketing Section */}
-      <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-gradient-to-r from-teal-50 to-white overflow-hidden relative">
+      <section
+        className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-cover bg-center overflow-hidden relative"
+        style={{
+          backgroundImage: 'url(https://ik.imagekit.io/7uve7qsipm/5.png?updatedAt=1726164162972)', // Replace with your image URL
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         {/* Left Section: Text */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-12 relative z-10">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-800 transition-transform transform hover:scale-105 hover:text-teal-600">
@@ -18,15 +24,6 @@ const DigitalMarketing = () => {
             “Your brand is what people say about you when you’re not in the room.” 
             We emphasize the active nature of consumers in this quote. Our company makes lasting positive impressions that last beyond a consumer's initial interaction.
           </p>
-        </div>
-
-        {/* Right Section: Image */}
-        <div className="w-full lg:w-1/2 relative z-10 flex justify-center">
-          <img
-            src="https://ik.imagekit.io/7uve7qsipm/digital.png?updatedAt=1724425460069"
-            alt="Digital Marketing"
-            className="w-11/12 lg:w-4/5 h-auto max-w-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform"
-          />
         </div>
 
         {/* Background Decorative Element */}
@@ -92,19 +89,19 @@ const DigitalMarketing = () => {
           <li><strong className="text-teal-600">Budget Allocation:</strong> Allocate budget based on channel performance.</li>
         </ul>
       </section>
+      
       {/* Photography/videography */}
       <section className="px-8 py-16 bg-white">
         <h2 className="text-3xl lg:text-4xl font-bold text-teal-600 mb-8 flex items-center">
-          <i className="fas fa-bullhorn text-red-600 mr-4"></i>
+          <i className="fas fa-camera text-red-600 mr-4"></i>
           Photography / Videography
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-          Pay per click (PPC) is a widely used advertising model on various websites, including search engines. Advertisers only pay when a user clicks on their ad.
+          Capture high-quality images and videos for your brand's needs. Professional photography and videography enhance visual appeal and effectively convey your message.
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-4">
-          <li><strong className="text-teal-600">Photo Shooting:</strong> Use Google Ads to target specific keywords and audiences.</li>
-          <li><strong className="text-teal-600">Video Shooting:</strong> Run ads on Facebook, Instagram, LinkedIn, Twitter, etc.</li>
-        
+          <li><strong className="text-teal-600">Photo Shooting:</strong> High-resolution photos for marketing materials.</li>
+          <li><strong className="text-teal-600">Video Shooting:</strong> Engaging videos for digital platforms.</li>
         </ul>
       </section>
     </div>

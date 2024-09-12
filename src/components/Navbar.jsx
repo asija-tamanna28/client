@@ -1,151 +1,3 @@
-// import React, { useState } from 'react';
-// import { Link, useLocation } from "react-router-dom";
-
-// const Navbar = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-//   const location = useLocation();
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   const toggleDropdown = () => {
-//     setIsDropdownOpen(!isDropdownOpen);
-//   };
-
-//   // Check if the current route is the Home page for internal links
-//   const isHomePage = location.pathname === "/";
-// // import {Link} from'react-router-dom';
-// // const Navbar = () => {
-// //   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-// //   const toggleMenu = () => {
-// //     setIsMenuOpen(!isMenuOpen);
-// //   };
-
-//   return (
-//     <header>
-//       {/* pre-navbar */}
-//       <div className="bg-teal-800 text-gray-100 py-2 px-6 flex justify-between items-center text-sm hidden md:flex fixed top-0 w-full z-50">
-//         <div className="flex items-center space-x-4">
-//           <i className="fas fa-map-marker-alt"></i>
-//           <span>SCO-2433-34, 2nd Floor, Sector 22c Chandigarh, 160022</span>
-//         </div>
-//         <div className="flex space-x-4">
-//           <a
-//             href="https://www.facebook.com/Myvisapointimmigration/"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="hover:text-white"
-//           >
-//             <i className="fab fa-facebook-f"></i>
-//           </a>
-//           <a
-//             href="https://www.linkedin.com/in/my-visa-point-59b115128/?originalSubdomain=in"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="hover:text-white"
-//           >
-//             <i className="fa-brands fa-linkedin"></i>
-//           </a>
-//           <a
-//             href="https://www.instagram.com/myvisapoint6"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="hover:text-white"
-//           >
-//             <i className="fab fa-instagram"></i>
-//           </a>
-//         </div>
-//       </div>
-
-//       {/* Main navBar */}
-//     <nav className="bg-white p-4 shadow-lg fixed top-0 w-full z-50 ">
-//       <div className="container mx-auto flex items-center justify-between">
-//         <div className="text-gray-800 text-xl font-bold">
-//           <a href="/">
-//             <img
-//               src="https://ik.imagekit.io/7uve7qsipm/LOGO%20(2).png?updatedAt=1724428021795"
-//               alt="Logo"
-//               className="h-12 w-auto"
-//             />
-//           </a>
-//         </div>
-//         <div className="hidden md:flex space-x-6">
-//           <a href="/" className="text-gray-800 hover:text-teal-600 transition-colors">Home</a>
-//           <a href="#about" className="text-gray-800 hover:text-teal-600 transition-colors">About</a>
-//           <a href="#services" className="text-gray-800 hover:text-teal-600 transition-colors">Services</a>
-//           <a href="#teams" className="text-gray-800 hover:text-teal-600 transition-colors">Teams</a>
-//           <a href="#contact" className="text-gray-800 hover:text-teal-600 transition-colors">Contact</a>
-//         </div>
-//         <button
-//           className="md:hidden text-gray-800 focus:outline-none"
-//           onClick={toggleMenu}
-//         >
-//           <svg
-//             className="w-6 h-6"
-//             fill="none"
-//             stroke="currentColor"
-//             viewBox="0 0 24 24"
-//             xmlns="http://www.w3.org/2000/svg"
-//           >
-//             <path
-//               strokeLinecap="round"
-//               strokeLinejoin="round"
-//               strokeWidth="2"
-//               d="M4 6h16M4 12h16m-7 6h7"
-//             />
-//           </svg>
-//         </button>
-//       </div>
-//       <div
-//         className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-white text-gray-800 shadow-lg transition-transform transform ${isMenuOpen ? 'scale-100' : 'scale-0'}`}
-//         style={{ transition: 'transform 0.3s ease-out' }}
-//       >
-//         <a
-//           href="#home"
-//           className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-//           onClick={() => setIsMenuOpen(false)}
-//         >
-//           Home
-//         </a>
-//         <a
-//           href="#about"
-//           className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-//           onClick={() => setIsMenuOpen(false)}
-//         >
-//           About
-//         </a>
-//         <a
-//           href="#services"
-//           className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-//           onClick={() => setIsMenuOpen(false)}
-//         >
-//           Services
-//         </a>
-//         <a
-//           href="#teams"
-//           className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-//           onClick={() => setIsMenuOpen(false)}
-//         >
-//           Teams
-//         </a>
-//         <a
-//           href="#contact"
-//           className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-//           onClick={() => setIsMenuOpen(false)}
-//         >
-//           Contact
-//         </a>
-//       </div>
-//     </nav>
-//     </header>
-//   );
-// };
-
-// export default Navbar;
-
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -217,20 +69,20 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
           {isHomePage ? (
-              <a href="#hero" className="hover:text-teal-600 transition-colors text-xl">
+              <a href="#home" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
                 Home
               </a>
             ) : (
-              <Link to="/#hero" className="hover:text-teal-600 transition-colors text-xl">
+              <a to="/#home" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
                 Home
-              </Link>
+              </a>
             )}
             {isHomePage ? (
-              <a href="#about" className="hover:text-teal-600 transition-colors text-xl">
+              <a href="#about" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
                 About
               </a>
             ) : (
-              <Link to="/#about" className="hover:text-teal-600 transition-colors text-xl">
+              <Link to="/#about" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
                 About
               </Link>
             )}
@@ -239,25 +91,25 @@ const Navbar = () => {
               
             {isHomePage ? (
               <a
-                href="#Teams"
-                className="hover:text-teal-600 transition-colors text-xl"
+                href="#teams"
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
               >
                 Teams
               </a>
             ) : (
               <Link
-                to="/#Teams"
-                className="hover:text-teal-600 transition-colors text-xl"
+                to="/#teams"
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
               >
                 Teams
               </Link>
             )}
             {isHomePage ? (
-              <a href="#contact" className="hover:text-teal-600 transition-colors text-xl">
+              <a href="#contact" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
                 Contact
               </a>
             ) : (
-              <Link to="/#contact" className="hover:text-teal-600 transition-colors text-xl">
+              <Link to="/#contact" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
                 Contact
               </Link>
             )}
