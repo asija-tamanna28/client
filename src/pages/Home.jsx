@@ -7,6 +7,8 @@ import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
 import Teams from '../components/Teams';
 import Contact from '../components/Contact';
+import PortfolioSection from '../components/PortfolioSection'; // or .js
+;
 
 
 const Home = () => {
@@ -28,6 +30,7 @@ const Home = () => {
       <section id="contact">
         <Contact />
       </section>
+      <PortfolioSection/>
     </div>
   );
 };

@@ -52,6 +52,9 @@ const DigitalMarketing = () => {
           <li><strong className="text-teal-600">Engage Audience:</strong> Foster a community through interactive and engaging content.</li>
           <li><strong className="text-teal-600">Drive Traffic:</strong> Direct traffic to the website and other digital assets.</li>
           <li><strong className="text-teal-600">Generate Leads:</strong> Capture potential leads for business growth.</li>
+          <li><strong className="text-teal-600">Social Media Analytics:</strong>  Essential for monitoring and assessing the success of marketing efforts.</li>
+          <li><strong className="text-teal-600">Google Analytics:</strong> Data-driven decisions to improve their online presence and marketing strategies.</li>
+          <li><strong className="text-teal-600">Poster Analytics:</strong>visually appealing and informative posters to communicate a message, promote an event, advertise a product.</li>
         </ul>
       </section>
 
@@ -87,6 +90,21 @@ const DigitalMarketing = () => {
           <li><strong className="text-teal-600">Social Media Ads:</strong> Run ads on Facebook, Instagram, LinkedIn, Twitter, etc.</li>
           <li><strong className="text-teal-600">Display Ads:</strong> Use banner ads on relevant services.</li>
           <li><strong className="text-teal-600">Budget Allocation:</strong> Allocate budget based on channel performance.</li>
+        </ul>
+      </section>
+      {/* Photography/videography */}
+      <section className="px-8 py-16 bg-white">
+        <h2 className="text-3xl lg:text-4xl font-bold text-teal-600 mb-8 flex items-center">
+          <i className="fas fa-bullhorn text-red-600 mr-4"></i>
+          Photography / Videography
+        </h2>
+        <p className="text-lg text-gray-700 mb-6">
+          Pay per click (PPC) is a widely used advertising model on various websites, including search engines. Advertisers only pay when a user clicks on their ad.
+        </p>
+        <ul className="list-disc list-inside text-gray-700 space-y-4">
+          <li><strong className="text-teal-600">Photo Shooting:</strong> Use Google Ads to target specific keywords and audiences.</li>
+          <li><strong className="text-teal-600">Video Shooting:</strong> Run ads on Facebook, Instagram, LinkedIn, Twitter, etc.</li>
+        
         </ul>
       </section>
     </div>

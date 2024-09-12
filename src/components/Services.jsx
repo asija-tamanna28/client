@@ -37,7 +37,7 @@ const Services = () => {
             data-aos-delay="400"
           >
             <div className="flex items-center justify-center mb-4">
-              <i className="fas fa-bullhorn text-blue-500 text-4xl"></i>
+              <i className="fas fa-bullhorn text-teal-500 text-4xl"></i>
             </div>
             <h3 className="text-xl font-semibold text-teal-800 mb-2">Digital Marketing</h3>
             <p className="text-gray-700 mb-4">

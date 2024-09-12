@@ -5,7 +5,7 @@ const Sellpoint = () => {
     <section className="py-16 px-8 bg-gray-50" data-aos="fade-up">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-teal-600" data-aos="fade-down">
-          Why Choose Us?
+          Why Choose us?
         </h2>
         <p className="text-lg text-center mb-12 text-gray-700" data-aos="fade-down">
           Welcome To DODUN Soft Solutions - Empowering Tomorrow's Technology!

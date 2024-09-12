@@ -8,8 +8,14 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-center min-h-96 bg-gradient-to-r from-teal-200 via-blue-100 to-white px-8 py-16">
-      <div 
+    <section
+    className="  bg-cover bg-center min-h-96 min-h-78"
+    style={{
+      backgroundImage: "url('https://ik.imagekit.io/6oa6qejxe/Copy%20of%20dodun%20.png?updatedAt=1726134993615')",
+    }}
+  >
+   {/* <section className="flex flex-col lg:flex-row items-center justify-center min-h-96 bg-gradient-to-r from-teal-200 via-blue-100 to-white px-8 py-16"> */}
+      {/* <div 
         className="w-full lg:w-1/2 lg:pr-8 mb-8 lg:mb-0" 
         data-aos="fade-up"
       >
@@ -43,7 +49,7 @@ const HeroSection = () => {
           className="w-full h-full lg:h-80 lg:w-auto object-cover rounded-lg shadow-lg"
           data-aos="fade-left"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

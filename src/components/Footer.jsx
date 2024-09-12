@@ -69,6 +69,14 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/privacy"
+                  className="text-gray-600 hover:text-teal-500 transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -124,15 +132,7 @@ const Footer = () => {
           >
             <i className="fab fa-instagram fa-lg"></i>
           </a>
-          <p className="mt-2 md:mt-0">
-            <a
-              href="#"
-              className="bg-gray-200 hover:bg-gray-300 p-2 rounded text-black flex items-center justify-center"
-            >
-              <i className="fas fa-arrow-circle-up mr-2"></i>   
-              Back to top
-            </a>
-          </p>
+         
         </div>
 
         <div className="mt-8 text-center text-gray-500 text-sm">
