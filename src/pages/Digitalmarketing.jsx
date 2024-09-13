@@ -100,8 +100,13 @@ const DigitalMarketing = () => {
           Capture high-quality images and videos for your brand's needs. Professional photography and videography enhance visual appeal and effectively convey your message.
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-4">
-          <li><strong className="text-teal-600">Photo Shooting:</strong> High-resolution photos for marketing materials.</li>
+          <li><strong className="text-teal-600">Photo Shoot:</strong> High-resolution photos for marketing materials.</li>
           <li><strong className="text-teal-600">Video Shooting:</strong> Engaging videos for digital platforms.</li>
+          <li><strong className="text-teal-800">Post Production</strong> Divide into Two categories</li>
+          <ul className="list-disc list-inside text-gray-700 space-y-4">
+          <li><strong className="text-teal-600">Photo Editing:</strong> adjusting and enhancing digital images using software to improve their quality, correct imperfections, or achieve a specific artistic effect.</li>
+          <li><strong className="text-teal-600">Video Editing:</strong> Video editing is the process of manipulating and rearranging video footage to create a final polished product..</li>
+          </ul>
         </ul>
       </section>
     </div>
