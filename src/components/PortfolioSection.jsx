@@ -37,8 +37,8 @@ const PortfolioSection = () => {
     };
 
     return (
-        <div className="bg-gray-100 py-12">
-            <div className="container mx-auto text-center">
+        <div className="bg-gray-100 py-8">
+            <div className="container mx-20 text-center">
                 <h3 className="text-2xl font-semibold mb-8">Our Companies Tie Ups</h3>
                 
                 {/* Slider for logos */}
@@ -47,35 +47,35 @@ const PortfolioSection = () => {
                         <img
                             src="https://ik.imagekit.io/6oa6qejxe/1%20(2).png?updatedAt=1726156895517"
                             alt="Anil Narula institute"
-                            className="h-36 mx-auto w-auto" // Increased the height to h-36
+                            className="h-50 mx-auto w-auto" // Increased the height to h-36
                         />
                     </div>
                     <div>
                         <img
                             src="https://ik.imagekit.io/6oa6qejxe/5%20(2).png?updatedAt=1726156893929"
                             alt="ina"
-                            className="h-36 mx-auto w-auto" // Increased the height to h-36
+                            className="h-50 mx-auto w-auto" // Increased the height to h-36
                         />
                     </div>
                     <div>
                         <img
                             src="https://ik.imagekit.io/6oa6qejxe/2%20(1).png?updatedAt=1726156892101"
                             alt="beaso"
-                            className="h-36 mx-auto w-auto" // Increased the height to h-36
+                            className="h-50 mx-auto w-auto" // Increased the height to h-36
                         />
                     </div>
                     <div>
                         <img
                             src="https://ik.imagekit.io/6oa6qejxe/4%20(1).png?updatedAt=1726156890496"
                             alt="microzoone"
-                            className="h-36 mx-auto w-auto" // Increased the height to h-36
+                            className="h-50 mx-auto w-auto" // Increased the height to h-36
                         />
                     </div>
                     <div>
                         <img
                             src="https://ik.imagekit.io/6oa6qejxe/3%20(3).png?updatedAt=1726156828228"
                             alt="MY visa point"
-                            className="h-36 mx-auto w-auto" // Increased the height to h-36
+                            className="h-50 mx-auto w-auto" // Increased the height to h-36
                         />
                     </div>
                 </Slider>

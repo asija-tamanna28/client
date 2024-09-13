@@ -6,26 +6,25 @@ const WindowsDevelopment = () => {
     <div>
       <Navbar />
 
-      {/* Main Windows Development Section */}
-      <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-gradient-to-r from-teal-50 to-white overflow-hidden relative">
+      
+
+       {/* Main  Window Development Section */}
+       <section
+        className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-cover bg-center overflow-hidden relative"
+        style={{
+          backgroundImage: 'url(https://ik.imagekit.io/6oa6qejxe/WhatsApp%20Image%202024-09-13%20at%2012.53.29%20PM.jpeg?updatedAt=1726215753395)', // Replace with your image URL
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         {/* Left Section: Text */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-12 relative z-10">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-800 transition-transform transform hover:scale-105 hover:text-teal-600">
-            Windows Development
+            Window Development
           </h1>
           <p className="text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed transition-opacity opacity-90 hover:opacity-100">
-            We are a team of talented designers making websites and also making a place in Windows Development! 
-            We help create software applications for the Windows operating system.
+          We are a team of talented designers making websites and also making a place in Windows Development! 
+          We help create software applications for the Windows operating system.
           </p>
-        </div>
-
-        {/* Right Section: Image */}
-        <div className="w-full lg:w-1/2 relative z-10 flex justify-center">
-          <img
-            src="https://ik.imagekit.io/7uve7qsipm/windows.png?updatedAt=1724425548512"
-            alt="Windows Development"
-            className="w-11/12 lg:w-4/5 h-auto max-w-lg rounded-lg shadow-lg transform hover:scale-105 transition-transform"
-          />
         </div>
 
         {/* Background Decorative Element */}

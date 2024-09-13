@@ -14,6 +14,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import PublicRelations from './pages/PublicRelations';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/WindowsDevelopment" element={<WindowsDevelopment />} />
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/privacy" element={<PrivacyPolicy/>}/>
+          <Route path='/PublicRelations' element={<PublicRelations/>}/>
         </Routes>
       </div>
       <Footer />

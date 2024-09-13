@@ -35,7 +35,7 @@ const Teams = () => {
             <div className="absolute inset-0 bg-teal-500 opacity-30 transition-opacity duration-500 hover:opacity-0"></div>
             <div className="flex items-center justify-center mb-4 relative z-10">
               <img
-                src="https://ik.imagekit.io/7uve7qsipm/WhatsApp%20Image%202024-08-23%20at%208.49.38%20PM%20(1).jpeg?updatedAt=1724426743587" // Replace with the URL of Abhishek's picture
+                src="https://ik.imagekit.io/6oa6qejxe/WhatsApp%20Image%202024-09-05%20at%2012.42.12%20AM.jpeg?updatedAt=1726211089520" // Replace with the URL of Abhishek's picture
                 alt="Abhishek"
                 className="w-32 h-32 object-cover rounded-full border-4 border-teal-400"
               />
@@ -74,6 +74,22 @@ const Teams = () => {
             </div>
             <h3 className="text-xl font-semibold mb-1">Tamanna Asija</h3>
             <p className="text-teal-300"> Development Head</p>
+          </div>
+          <div
+            className="bg-gray-900 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl relative overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div className="absolute inset-0 bg-teal-500 opacity-30 transition-opacity duration-500 hover:opacity-0"></div>
+            <div className="flex items-center justify-center mb-4 relative z-10">
+              <img
+                src="https://ik.imagekit.io/6oa6qejxe/WhatsApp%20Image%202024-09-12%20at%205.56.32%20PM.jpeg?updatedAt=1726210605495" 
+                alt="Amanpreet"
+                className="w-32 h-32 object-cover rounded-full border-4 border-teal-400"
+              />
+            </div>
+            <h3 className="text-xl font-semibold mb-1">Amanpreet</h3>
+            <p className="text-teal-300"> Client Relationship Manager</p>
           </div>
         </div>
       </div>
