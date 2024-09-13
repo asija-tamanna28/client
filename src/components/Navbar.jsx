@@ -1,32 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Import icons
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
-
+  const dropdownRef = useRef(null);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setIsDropdownOpen((prev) => !prev);
   };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
 
-  // Check if the current route is the Home page for internal links
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
+
   const isHomePage = location.pathname === "/";
 
   return (
     <header>
-      {/* Pre-Navbar - Hidden on mobile */}
+      {/* Pre-Navbar */}
       <div className="bg-teal-600 text-gray-100 py-2 px-6 flex justify-between items-center text-sm hidden md:flex fixed top-0 w-full z-50">
         <div className="flex items-center space-x-4">
           <i className="fas fa-map-marker-alt"></i>
-          <span>GM Plaza , Phase-7,Industrial Area, Sector 73 , Mohali,+91-8968881110</span>
+          <span>
+            GM Plaza, Phase-7, Industrial Area, Sector 73, Mohali,
+            +91-8968881110
+          </span>
         </div>
         <div className="flex space-x-4">
-          
           <a
             href="https://www.linkedin.com/company/dodun-soft-solution/?viewAsMember=true"
             target="_blank"
@@ -58,58 +71,99 @@ const Navbar = () => {
                 className="h-12 w-auto"
               />
             </Link>
-            {/* <Link to="/">
-              <div className="leading-tight">
-                <h1 className="text-lg sm:text-xl font-bold">MY VISA POINT</h1>
-                <p className="text-xs sm:text-sm">Gateway to Global Opportunities</p>
-              </div>
-            </Link> */}
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-          {isHomePage ? (
-              <a href="#home" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
-                Home
-              </a>
-            ) : (
-              <a to="/#home" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
-                Home
-              </a>
-            )}
-            {isHomePage ? (
-              <a href="#about" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
-                About
-              </a>
-            ) : (
-              <Link to="/#about" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
-                About
-              </Link>
-            )}
-           
-                  
-              
             {isHomePage ? (
               <a
-                href="#teams"
+                href="#home"
                 className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
               >
-                Teams
+                Home
               </a>
             ) : (
               <Link
-                to="/#teams"
+                to="/#home"
                 className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
               >
-                Teams
+                Home
               </Link>
             )}
             {isHomePage ? (
-              <a href="#contact" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
+              <a
+                href="#about"
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
+              >
+                About
+              </a>
+            ) : (
+              <Link
+                to="/#about"
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
+              >
+                About
+              </Link>
+            )}
+
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={toggleDropdown}
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl flex items-center"
+              >
+                Services
+                <span className="ml-2">
+                  {isDropdownOpen ? (
+                    <FaChevronUp className="w-4 h-4" /> // Up icon when open
+                  ) : (
+                    <FaChevronDown className="w-4 h-4" /> // Down icon when closed
+                  )}
+                </span>
+              </button>
+
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute left-0 mt-1 bg-gray-100 shadow-lg rounded-xl w-40 z-99">
+                  <Link
+                    to="/graphicDesign"
+                    className="block px-4 py-2 hover:bg-teal-100"
+                  >
+                    Graphic Design
+                  </Link>
+                  <Link
+                    to="/digitalMarketing"
+                    className="block px-4 py-2 hover:bg-teal-100"
+                  >
+                    Digital Marketing
+                  </Link>
+                  <Link
+                    to="/WebDevelopment"
+                    className="block px-4 py-2 hover:bg-teal-100"
+                  >
+                    Web Development
+                  </Link>
+                  <Link
+                    to="/WindowsDevelopment"
+                    className="block px-4 py-2 hover:bg-teal-100"
+                  >
+                    Windows Development
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {isHomePage ? (
+              <a
+                href="#contact"
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
+              >
                 Contact
               </a>
             ) : (
-              <Link to="/#contact" className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl">
+              <Link
+                to="/#contact"
+                className="block px-2 py-2 hover:bg-teal-600 hover:text-white hover:rounded-xl rounded-xl transition-colors text-xl"
+              >
                 Contact
               </Link>
             )}
@@ -136,7 +190,9 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-gray-100 text-gray-800 shadow-lg`}
+          className={`md:hidden ${
+            isMenuOpen ? "block" : "hidden"
+          } bg-gray-100 text-gray-800 shadow-lg`}
         >
           <Link
             to="/"
@@ -269,4 +325,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
