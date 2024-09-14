@@ -17,6 +17,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import PublicRelations from './pages/PublicRelations';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import FormData from './pages/FormData';
 
 function App() {
   AOS.init({disable: 'mobile'});
@@ -35,6 +36,7 @@ function App() {
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/privacy" element={<PrivacyPolicy/>}/>
           <Route path='/PublicRelations' element={<PublicRelations/>}/>
+          <Route path='/formdata' element={<FormData/>}/>
         </Routes>
       </div>
       <Footer />

@@ -27,22 +27,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs.send(
-      'service_8xe5akd',
-      'template_0p93iia',
-      formData,
-      'G9W5GtHBcqDAJqi8Y'
-    )
-    .then((response) => {
-      setModalContent('Message sent successfully!');
-      setModalIsOpen(true);
+  
+    fetch('http://localhost:5000/api/contact/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
     })
-    .catch((err) => {
-      setModalContent('Failed to send the message, please try again.');
-      setModalIsOpen(true);
-    });
-
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Failed to send the message');
+        }
+      })
+      .then((data) => {
+        setModalContent('Message sent successfully!');
+        setModalIsOpen(true);
+      })
+      .catch((err) => {
+        setModalContent('Failed to send the message, please try again.');
+        setModalIsOpen(true);
+      });
+  
     setFormData({
       name: '',
       email: '',
@@ -50,6 +58,7 @@ const Contact = () => {
       message: ''
     });
   };
+  
 
   const closeModal = () => {
     setModalIsOpen(false);
