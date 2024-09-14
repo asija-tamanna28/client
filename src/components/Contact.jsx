@@ -68,7 +68,7 @@ const Contact = () => {
     <section className="py-16 px-8 bg-gradient-to-r from-teal-100 to-white text-gray-800">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-teal-600 mb-8" data-aos="fade-up">
-          Contact Us
+         Get a free quote!!
         </h2>
         <p className="text-lg text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="200">
           We'd love to hear from you. Please reach out with any questions or feedback.

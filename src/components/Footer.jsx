@@ -6,20 +6,20 @@ const Footer = () => {
   const location = useLocation();
 
   const handleNavigation = (path, section) => {
-    if (location.pathname === '/') {
+    if (location.pathname === "/") {
       // If already on the homepage, scroll to the section
       const element = document.getElementById(section);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
       // If on a different route, navigate to the homepage first
-      navigate('/');
+      navigate("/");
       // After navigating, use a small delay to scroll to the section
       setTimeout(() => {
         const element = document.getElementById(section);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: "smooth" });
         }
       }, 100); // Adjust delay as needed for your page load time
     }
@@ -32,9 +32,25 @@ const Footer = () => {
           {/* Company Information */}
           <div className="mb-8 md:mb-0">
             <h2 className="text-xl font-bold mb-2 text-white-600">DODUN</h2>
-            <p className="mb-2">GM Plaza , Phase-7</p>
-            <p className="mb-2">Industrial Area, Sector 73 , Mohali</p>
-            <p className="mb-2">Phone: +91 8968881110</p>
+            <p className="mb-2">
+              <a
+                href="https://www.google.com/maps/place/GM+Plaza,+Phase-7,+Industrial+Area,+Sector+73,+Mohali"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-teal-400"
+              >
+                GM Plaza, Phase-7, Industrial Area, Sector 73, Mohali
+              </a>
+            </p>
+            <p className="mb-2">
+              Phone:{" "}
+              <a
+                href="tel:+918968881110"
+                className="text-white hover:text-teal-400"
+              >
+                +91 8968881110
+              </a>
+            </p>
             <p>
               Email:{" "}
               <a
@@ -63,7 +79,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#about"
-                  onClick={() => handleNavigation('/', 'about')}
+                  onClick={() => handleNavigation("/", "about")}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   About Us
@@ -72,7 +88,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  onClick={() => handleNavigation('/', 'services')}
+                  onClick={() => handleNavigation("/", "services")}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Services
@@ -81,7 +97,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#teams"
-                  onClick={() => handleNavigation('/', 'teams')}
+                  onClick={() => handleNavigation("/", "teams")}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Teams
@@ -90,7 +106,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  onClick={() => handleNavigation('/', 'contact')}
+                  onClick={() => handleNavigation("/", "contact")}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Contact Us
