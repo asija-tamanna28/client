@@ -1,7 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigation = (path, section) => {
+    if (location.pathname === '/') {
+      // If already on the homepage, scroll to the section
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on a different route, navigate to the homepage first
+      navigate('/');
+      // After navigating, use a small delay to scroll to the section
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // Adjust delay as needed for your page load time
+    }
+  };
+
   return (
     <footer className="bg-teal-600 text-white py-8 shadow-lg bottom-0 left-0 w-full">
       <div className="container mx-auto px-4">
@@ -30,44 +53,48 @@ const Footer = () => {
             </h3>
             <ul>
               <li>
-                <Link
-                  to="/"
+                <a
+                  href="/"
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#about"
+                <a
+                  href="#about"
+                  onClick={() => handleNavigation('/', 'about')}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   About Us
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#services"
+                <a
+                  href="#services"
+                  onClick={() => handleNavigation('/', 'services')}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Services
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#teams"
+                <a
+                  href="#teams"
+                  onClick={() => handleNavigation('/', 'teams')}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Teams
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#contact"
+                <a
+                  href="#contact"
+                  onClick={() => handleNavigation('/', 'contact')}
                   className="text-white hover:text-teal-800 transition-colors"
                 >
                   Contact Us
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
@@ -138,7 +165,6 @@ const Footer = () => {
           >
             <i className="fab fa-instagram fa-lg"></i>
           </a>
-         
         </div>
 
         <div className="mt-8 text-center text-white text-sm">
