@@ -18,7 +18,7 @@ const HeroSection = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source
-          src="https://ik.imagekit.io/7uve7qsipm/Copy%20of%20dodun%20.mp4?updatedAt=1726160783516" // Replace with your video URL
+          src="https://ik.imagekit.io/tdlebsr5e/dodun%20website%20%20(1).mp4?updatedAt=1726486076489" // Replace with your video URL
           type="video/mp4"
         />
         Your browser does not support the video tag.
