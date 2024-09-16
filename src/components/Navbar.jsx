@@ -188,121 +188,53 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        <div
-          className={`md:hidden ${
-            isMenuOpen ? "block" : "hidden"
-          } bg-gray-100 text-gray-800 shadow-lg`}
-        >
-          <Link
-            to="/"
-            className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </Link>
-          {isHomePage ? (
-            <a
-              href="#about"
-              className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </a>
-          ) : (
-            <Link
-              to="/#about"
-              className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
-          )}
-          <div className="relative">
-      <button
-        onClick={toggleDropdown}
-        className="block w-full text-left px-4 py-3 hover:bg-teal-100 transition-colors"
-      >
-        Services
-        <svg
-          className="w-4 h-4 ml-1 inline"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </button>
-      {isDropdownOpen && (
-        <div className="absolute right-0 bg-gray-100 w-full z-50">
-          <Link
-            to="/graphicDesign"
-            className="block px-4 py-2 hover:bg-teal-100"
-          >
-            Graphic Design
-          </Link>
-          <Link
-            to="/digitalMarketing"
-            className="block px-4 py-2 hover:bg-teal-100"
-          >
-            Digital Marketing
-          </Link>
-          <Link
-            to="/WebDevelopment"
-            className="block px-4 py-2 hover:bg-teal-100"
-          >
-            Web Development
-          </Link>
-          <Link
-           to={"/WebDevelopment"}
-            className="block px-4 py-2 hover:bg-teal-100"
-          >
-            Windows Development
-          </Link>
-        </div>
-      )}
-    </div>
-          {isHomePage ? (
-            <a
-              href="#testimonials"
-              className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </a>
-          ) : (
-            <Link
-              to="/#testimonials"
-              className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </Link>
-          )}
-          {isHomePage ? (
-            <a
-              href="#contact"
-              className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </a>
-          ) : (
-            <Link
-              to="/#contact"
-              className="block px-4 py-3 hover:bg-teal-100 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-          )}
-        </div>
+      {/* Mobile Menu */}
+<div
+  className={`md:hidden ${
+    isMenuOpen ? "block" : "hidden"
+  } bg-gray-100 text-gray-800 shadow-lg`}
+>
+  <Link
+    to="/"
+    className="block px-4 py-3 hover:bg-teal-100 transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Home
+  </Link>
+
+  <a
+    href="#about"
+    className="block px-4 py-3 hover:bg-teal-100 transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    About
+  </a>
+
+  <a
+    href="#services"
+    className="block px-4 py-3 hover:bg-teal-100 transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Services
+  </a>
+
+  <a
+    href="#teams"
+    className="block px-4 py-3 hover:bg-teal-100 transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Team
+  </a>
+
+  <a
+    href="#contact"
+    className="block px-4 py-3 hover:bg-teal-100 transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Contact
+  </a>
+</div>
+
       </nav>
     </header>
   );
