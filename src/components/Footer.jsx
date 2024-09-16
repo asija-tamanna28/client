@@ -34,7 +34,7 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-2 text-white-600">DODUN</h2>
             <p className="mb-2">
               <a
-                href="https://www.google.com/maps/place/GM+Plaza,+Phase-7,+Industrial+Area,+Sector+73,+Mohali"
+                href="https://maps.apple.com/place?address=Sector%2073%2C%20Mohali%2C%20160055%2C%20Punjab%2C%20India&auid=1310168722158263735&ll=30.713634%2C76.699248&q=Gm%20Plaza"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-teal-400"
@@ -60,6 +60,16 @@ const Footer = () => {
                 dodunsoftsolutions@gmail.com
               </a>
             </p>
+            <div className="flex flex-col items-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27441.16570080962!2d76.66208824532526!3d30.714303780884634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee584d0f0095%3A0x955e87261dd4732!2sPhase%207%2C%20Industrial%20Area%2C%20Sector%2073%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140308!5e0!3m2!1sen!2sin!4v1726477973351!5m2!1sen!2sin"
+            className="w-full md:w-128 h-32 border-0 rounded-lg shadow-lg mt-2"
+            title="Google Map"
+            loading="lazy"
+            
+            allowFullScreen
+          ></iframe>
+        </div>
           </div>
 
           {/* Useful Links */}
