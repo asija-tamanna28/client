@@ -9,7 +9,7 @@ const GraphicDesign = () => {
 
       {/* Main Graphic Design Section */}
       <section
-        className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-cover bg-center relative"
+        className="flex flex-row lg:flex-row items-center justify-between min-h-96 px-8 py-16 bg-cover bg-center relative"
         style={{ backgroundImage: "url('https://ik.imagekit.io/6oa6qejxe/WhatsApp%20Image%202024-09-13%20at%2012.43.59%20PM.jpeg?updatedAt=1726211808544')" }}
       >
         {/* Left Section: Text */}

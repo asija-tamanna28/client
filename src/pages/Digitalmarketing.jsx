@@ -9,7 +9,7 @@ const DigitalMarketing = () => {
 
       {/* Main Digital Marketing Section */}
       <section
-        className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-cover bg-center overflow-hidden relative"
+        className="flex-row lg:flex-row items-center justify-between min-h-96 px-8 py-16 bg-cover bg-center overflow-hidden relative"
         style={{
           backgroundImage: 'url(https://ik.imagekit.io/7uve7qsipm/5.png?updatedAt=1726164162972)', // Replace with your image URL
           backgroundRepeat: 'no-repeat',

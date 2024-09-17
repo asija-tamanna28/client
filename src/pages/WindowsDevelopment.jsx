@@ -10,7 +10,7 @@ const WindowsDevelopment = () => {
 
        {/* Main  Window Development Section */}
        <section
-        className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-cover bg-center overflow-hidden relative"
+        className="flex-row lg:flex-row items-center justify-between min-h-96 px-8 py-16 bg-cover bg-center overflow-hidden relative"
         style={{
           backgroundImage: 'url(https://ik.imagekit.io/6oa6qejxe/WhatsApp%20Image%202024-09-13%20at%2012.53.29%20PM.jpeg?updatedAt=1726215753395)', // Replace with your image URL
           backgroundRepeat: 'no-repeat',

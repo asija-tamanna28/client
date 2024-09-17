@@ -5,7 +5,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <Navbar />
-      <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-8 py-16 bg-gradient-to-r from-teal-50 to-white overflow-hidden relative">
+      <section className="flex-row lg:flex-row items-center justify-between min-h-96 px-8 py-16 bg-gradient-to-r from-teal-50 to-white overflow-hidden relative">
         
 
 
