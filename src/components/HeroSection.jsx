@@ -40,7 +40,6 @@ const HeroSection = () => {
             ? "https://ik.imagekit.io/devhm/dodun%20website%20.mp4?updatedAt=1726549330363" // Replace with your mobile video URL
             : "https://ik.imagekit.io/devhm/Copy%20of%20dodun%20website%20.mp4?updatedAt=1726549330961"  // Replace with your laptop/desktop video URL
           }
-          src="https://ik.imagekit.io/tdlebsr5e/dodun%20website%20%20(1).mp4?updatedAt=1726486076489" // Replace with your video URL
           type="video/mp4"
         />
         Your browser does not support the video tag.
