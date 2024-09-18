@@ -60,13 +60,6 @@ const PublicRelations = () => {
 
        
       </div>
-
-      <a
-            href="#Contact"
-            className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 focus:outline-none"
-          >
-            Contact
-          </a>
     </div>
   );
 };
