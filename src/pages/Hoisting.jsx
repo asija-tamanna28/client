@@ -7,18 +7,18 @@ const Hoisting = () => {
       {/* Navbar Component */}
       <Navbar />
 
-      {/* Main Graphic Design Section */}
+      {/* Main Hosting Overview Section */}
       <section
-        className="flex flex-row lg:flex-row items-center justify-between min-h-96 px-8 py-16 bg-cover bg-center relative"
-        style={{ backgroundImage: "url('https://ik.imagekit.io/6oa6qejxe/WhatsApp%20Image%202024-09-13%20at%2012.43.59%20PM.jpeg?updatedAt=1726211808544')" }}
+        className="flex flex-col lg:flex-row items-center justify-between min-h-96 px-8 py-16 bg-cover bg-center relative"
+        style={{ backgroundImage: "url('https://ik.imagekit.io/devhm/WhatsApp%20Image%202024-09-23%20at%205.43.08%20PM.jpeg?updatedAt=1727093637053')" }}
       >
-        {/* Left Section: Text */}
+        {/* Left Section: Introduction */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-12 relative z-10">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-800 transition-transform transform hover:scale-105 hover:text-teal-600">
-            Hosting
+            Website Hosting Solutions
           </h1>
           <p className="text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed transition-opacity opacity-90 hover:opacity-100">
-          Hosting refers to the service that allows individuals or organizations to make their websites accessible on the internet. It involves storing website files on a server, which is a powerful computer that is always connected to the internet.
+            Our reliable hosting services provide a solid foundation for your website, ensuring fast performance and round-the-clock availability. Whether you're launching a small blog or managing a large-scale enterprise site, we’ve got you covered.
           </p>
         </div>
 
@@ -31,75 +31,71 @@ const Hoisting = () => {
         </div>
       </section>
 
-      {/* Additional Graphic Design Content Section */}
+      {/* Website Hosting Details Section */}
       <section className="px-8 py-16 bg-white">
         <h2 className="text-3xl lg:text-4xl font-bold text-teal-600 mb-8 flex items-center">
-          <i className="fas fa-palette text-pink-600 mr-4"></i>
-          Website Hosting
+          <i className="fas fa-server text-pink-600 mr-4"></i>
+          Reliable Web Hosting
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-        Website hosting is a service that enables individuals or organizations to make their websites available on the internet.
+          Choose a hosting solution that grows with your business. We offer everything from shared hosting for smaller sites to VPS and dedicated servers for high-traffic websites.
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-4">
-          <li><strong className="text-teal-600">Logo Design:</strong> Craft unique logos that represent your brand's identity.</li>
-          <li><strong className="text-teal-600">Brand Identity:</strong> Develop cohesive brand elements that resonate with your audience.</li>
-          <li><strong className="text-teal-600">Print Design:</strong> Create visually appealing brochures, flyers, and posters.</li>
-          <li><strong className="text-teal-600">Web Design:</strong> Design user-friendly and aesthetically pleasing websites.</li>
+          <li><strong className="text-teal-600">Fast Performance:</strong> Enjoy quick load times, ensuring visitors stay engaged with your content.</li>
+          <li><strong className="text-teal-600">24/7 Support:</strong> Get assistance whenever you need it, no matter your time zone.</li>
+          <li><strong className="text-teal-600">Scalable Plans:</strong> Upgrade easily as your website traffic and demands increase.</li>
+          <li><strong className="text-teal-600">Secure Infrastructure:</strong> Trust our robust security measures to keep your data safe.</li>
         </ul>
       </section>
 
-      {/* UX/UI Design Section */}
+      {/* Cloud Hosting and Databases Section */}
       <section className="px-8 py-16 bg-gray-50">
         <h2 className="text-3xl lg:text-4xl font-bold text-teal-600 mb-8 flex items-center">
-          <i className="fas fa-user-friends text-blue-600 mr-4"></i>
-          Cloud Database
+          <i className="fas fa-cloud text-blue-600 mr-4"></i>
+          Cloud Hosting & Databases
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-        Cloud databases are databases that run on cloud computing platforms rather than on local servers or traditional data centers. They offer various advantages, especially in the context of website hosting and application development.
+          Experience the flexibility of cloud hosting with powerful databases designed for dynamic web applications. Scale your resources in real-time and benefit from the flexibility of cloud computing.
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-4">
-          <li><strong className="text-teal-600">User Research:</strong> Conduct research to understand user needs and preferences.</li>
-          <li><strong className="text-teal-600">Wireframing:</strong> Create wireframes to map out the structure of your digital product.</li>
-          <li><strong className="text-teal-600">Prototyping:</strong> Develop interactive prototypes to test and refine designs.</li>
-          <li><strong className="text-teal-600">Visual Design:</strong> Implement a visually coherent design system across all interfaces.</li>
+          <li><strong className="text-teal-600">High Availability:</strong> Keep your website up and running, even during peak traffic.</li>
+          <li><strong className="text-teal-600">Automatic Backups:</strong> Never worry about losing data with regular, automated backups.</li>
+          <li><strong className="text-teal-600">Global Reach:</strong> Use cloud servers strategically placed around the world for optimal performance.</li>
+          <li><strong className="text-teal-600">Database Management:</strong> Benefit from managed cloud databases that support your website’s complex data needs.</li>
         </ul>
       </section>
 
-      {/* Motion Graphics Section */}
+      {/* File Storage and Backups Section */}
       <section className="px-8 py-16 bg-white">
         <h2 className="text-3xl lg:text-4xl font-bold text-teal-600 mb-8 flex items-center">
-          <i className="fas fa-video text-red-600 mr-4"></i>
-          File Storage / File Backups
+          <i className="fas fa-hdd text-red-600 mr-4"></i>
+          File Storage & Backups
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-        File Storage and File Backups are two essential components of hosting services, each serving different purposes in managing and protecting your data.
-        </p>
-        <p className="text-lg text-gray-700 mb-6">
-        File Storage refers to the way data is saved and organized on servers or cloud systems.
-        </p>
-        <p className="text-lg text-gray-700 mb-6">
-        File Storage and File Backups are two essential components of hosting services, each serving different purposes in managing and protecting your data.
+          Safeguard your website data with our secure file storage and backup solutions. Ensure that your valuable files are accessible and protected.
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-4">
-          <li><strong className="text-teal-600">Animated Videos:</strong> Produce compelling animated videos to explain your products or services.</li>
-          <li><strong className="text-teal-600">Title Sequences:</strong> Design dynamic title sequences for video content.</li>
-          <li><strong className="text-teal-600">Interactive Content:</strong> Develop interactive content to engage users on digital platforms.</li>
-          <li><strong className="text-teal-600">Social Media Graphics:</strong> Create animated graphics optimized for social media platforms.</li>
+          <li><strong className="text-teal-600">Redundant Storage:</strong> Protect your data with multiple copies stored across secure locations.</li>
+          <li><strong className="text-teal-600">Instant Recovery:</strong> Recover files quickly if disaster strikes, minimizing downtime.</li>
+          <li><strong className="text-teal-600">Scalable Storage:</strong> Expand your storage capacity as your website grows, without hassle.</li>
+          <li><strong className="text-teal-600">Daily Backups:</strong> Ensure your data is backed up daily, with easy access to restore points.</li>
         </ul>
       </section>
-      <section className="px-8 py-16 bg-white">
+
+      {/* Email Hosting Services Section */}
+      <section className="px-8 py-16 bg-gray-50">
         <h2 className="text-3xl lg:text-4xl font-bold text-teal-600 mb-8 flex items-center">
-          <i className="fas fa-video text-red-600 mr-4"></i>
-          Email-Services
+          <i className="fas fa-envelope text-blue-600 mr-4"></i>
+          Professional Email Hosting
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-          Motion graphics bring your story to life. We create engaging animations that convey complex ideas in a simple and entertaining way.
+          Enhance your business communications with professional email hosting. Get personalized email addresses using your domain name and advanced email security to protect your messages.
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-4">
-          <li><strong className="text-teal-600">Animated Videos:</strong> Produce compelling animated videos to explain your products or services.</li>
-          <li><strong className="text-teal-600">Title Sequences:</strong> Design dynamic title sequences for video content.</li>
-          <li><strong className="text-teal-600">Interactive Content:</strong> Develop interactive content to engage users on digital platforms.</li>
-          <li><strong className="text-teal-600">Social Media Graphics:</strong> Create animated graphics optimized for social media platforms.</li>
+          <li><strong className="text-teal-600">Custom Domains:</strong> Create branded email addresses for a professional touch.</li>
+          <li><strong className="text-teal-600">Spam Protection:</strong> Block unwanted emails and focus on what matters.</li>
+          <li><strong className="text-teal-600">Secure Email Access:</strong> Access your emails securely from any device, anywhere.</li>
+          <li><strong className="text-teal-600">24/7 Support:</strong> Our team is available around the clock to help with any issues.</li>
         </ul>
       </section>
     </div>
