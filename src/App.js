@@ -7,6 +7,7 @@ import GraphicDesign from "./pages/GraphicDesign";
 import Digitalmarketing from "./pages/Digitalmarketing";
 import Webdevelopment from "./pages/Webdevelopment";
 import WindowsDevelopment from "./pages/WindowsDevelopment";
+import Hoisting from './pages/Hoisting'
 import Navbar from "./components/Navbar";
 
 import Sidebar from './components/Sidebar';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/digitalMarketing" element={<Digitalmarketing />} />
           <Route path="/WebDevelopment" element={<Webdevelopment />} />
           <Route path="/WindowsDevelopment" element={<WindowsDevelopment />} />
+          <Route path="/Hoisting" element={<Hoisting/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/privacy" element={<PrivacyPolicy/>}/>
           <Route path='/PublicRelations' element={<PublicRelations/>}/>
